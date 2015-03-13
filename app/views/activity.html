@@ -1,0 +1,28 @@
+<div>
+  <a class="btn btn-primary" href="#/">< Back to Drivers</a>
+  <h1 class="jumbotron">Driver Activity</h1>
+  <h2 class="bg-info">{{driver.id}} - {{driver.firstName}} {{driver.lastName}} </h2>
+
+  <ol >
+      <li ng-repeat="activity in driver.activities">
+        <ol>
+              <li class="text-primary">
+               	{{activity.Trace_Key}}
+              </li>
+              <li>
+              	{{activity.Registration}}
+              </li>
+              <li class="text-success">
+              	{{activity.Activity_Type}}
+              </li>
+              <li>
+              	{{activity.Trace_Start | date : 'medium'}} to
+              </li>
+              <li>
+              	{{activity.Trace_End | date : 'medium'}}
+              </li>
+          <ol>
+      </li>
+  </ol>
+</div>
+

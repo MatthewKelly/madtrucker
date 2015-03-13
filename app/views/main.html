@@ -1,0 +1,15 @@
+<div>
+  <h1 class="jumbotron">Drivers</h1>
+  <ol >
+      <li ng-repeat="driver in drivers">
+        <ol class="drivers">
+              <li class="text-primary">
+                <span>{{driver.id}}</span>
+                <a class="btn btn-primary" href="#/activity/{{driver.id}}">Show activity</a>
+              </li>
+              <li>{{driver.firstName}} {{driver.lastName}}
+              </li>
+          <ol>
+      </li>
+  </ol>
+</div>
